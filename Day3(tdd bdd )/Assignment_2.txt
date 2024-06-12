@@ -1,0 +1,99 @@
+Assignment 2: Produce a comparative infographic of TDD, BDD, and FDD methodologies. Illustrate their unique approaches, benefits, and suitability for different software development contexts. Use visuals to enhance understanding.
+
+
+
+	
+TTD:-                                	    write test
+		                    		   |
+                                             Write code to pass test cases   -------pass-----create new tests again
+                                                   | 
+                                            Not passed refactor
+                                                   |
+                                              Repeat
+
+BDD:-                                   
+                                              Explain behaviour in plain language
+                                                        | 
+                                               Create test based on defined behaviour 
+                                                        |
+                                                Develop code to pass the tests
+                                                        | 
+                                                    Run al the tests
+                                                        |
+                                                      Repeat
+
+
+
+
+
+
+
+FDD:-   
+			    Develop overall model
+                                                                         |
+                                                              Build a feature list
+                                                                         |
+                                                                 Plan by feature
+                                                                         |
+                                                                Design by feature
+                                                                         | 
+                                                                   Build by feature
+
+Comparative Infographic: TDD vs. BDD vs. FDD
+1. Test-Driven Development (TDD):
+* Approach: Developers write tests before writing the actual code, focusing on small, incremental steps.
+* Benefits:
+o Early bug detection.
+o Improved code quality and design.
+o Rapid feedback loop.
+* Suitability:
+o Agile and iterative development.
+o Projects with well-defined requirements.
+o Projects requiring frequent changes.
+2. Behaviour-Driven Development (BDD):
+* Approach: Focuses on behaviour rather than implementation details, with tests written in a human-readable format.
+* Benefits:
+o Encourages collaboration between developers, testers, and stakeholders.
+o Enhances communication and understanding of requirements.
+o Supports automated acceptance testing.
+* Suitability:
+o Projects with complex business logic.
+o Cross-functional teams.
+o Customer-centric development.
+3. Feature-Driven Development (FDD):
+* Approach: Divides development into feature sets, each with its own development cycle consisting of design, build, and test phases.
+* Benefits:
+o Emphasizes on tangible deliverables and progress tracking.
+o Scalable for large and complex projects.
+o Promotes code reuse and modularity.
+* Suitability:
+o Large-scale enterprise projects.
+o Projects with a focus on feature delivery.
+o Distributed development teams.
+Conclusion:
+Each methodology offers unique approaches and benefits tailored to different software development contexts. While TDD focuses on code quality and rapid feedback, BDD emphasizes collaboration and understanding of user behavior, and FDD prioritizes feature delivery and project scalability. Choosing the right methodology depends on project requirements, team composition, and development objectives.
+
+
+
+  Aspect               TDD                               BDD                                        FDD                         
+
+  Focus                Code correctness            User behavior                          Feature delivery       
+
+  Process Steps     Write Test                      Define Behavior                     Develop Model        
+                             Run Test (Fail)              Write Examples (Tests)          Build Feature List    
+                             Write Code                     Implement Code                    Plan by Feature        
+                             Run Test (Pass)              Run Tests                               Design by Feature    
+                             Refractor                         Refractor                              Build by Feature      
+
+  Advantages        Ensures code quality    Improves communication       Delivers features fast 
+                             Facilitates refactoring  Ensures user requirements      Clear structure            
+                             Provides regression      Provides understanding          Reduces risks              
+
+  Disadvantages    Time-consuming         Requires stakeholder buy-in    Complex to manage      
+                              Initial effort                Writing good examples            Needs upfront planning 
+                             Tests for trivial code   Thorough collaboration            Not for small projects 
+
+ Applicability       Ensuring code quality  Enhancing communication      Large projects             
+                             Preventing bugs            Ensuring user satisfaction       Feature-rich apps         
+                             Clear requirements       Frequent changes                    Quick feature delivery
+
