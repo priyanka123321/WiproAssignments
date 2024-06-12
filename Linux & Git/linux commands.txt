@@ -1,0 +1,30 @@
+ls: List directory contents.
+cd: Change directory.
+pwd: Print working directory.
+mkdir: Make directory.
+rm: Remove files or directories.
+cp: Copy files and directories.
+mv: Move/rename files and directories.
+touch: Create an empty file.
+cat: Concatenate and display file content.
+grep: Search text patterns.
+find: Search files and directories.
+chmod: Change file permissions.
+chown: Change file owner and group.
+ssh: Secure Shell client.
+scp: Securely copy files between hosts.
+wget: Download files from the internet.
+tar: Archive utility.
+df: Display free disk space.
+du: Display disk usage of files and directories.
+top: Display system resource usage.
+ps: Display information about running processes.
+kill: Terminate processes.
+sudo: Execute commands with superuser privileges.
+uname: Display system information.
+man: Display manual pages for commands.
+apt-get/apt/yum: Package management commands for Debian-based (apt-get/apt) and Red Hat-based (yum) systems.
+lsblk: List block devices.
+ping: Test network connectivity.
+ifconfig/ip: Display network interface information.
+date: Display or set the system date and time.
