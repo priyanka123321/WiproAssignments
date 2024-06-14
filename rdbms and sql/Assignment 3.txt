@@ -1,0 +1,13 @@
+Write a SELECT query to retrieve all columns from a 'customers' table, and modify it to return only the customer name and email address for customers in a specific city.
+
+
+SELECT * FROM customers;
+
+you can modify it to return only the customer name and email address for customers in a specific city, let's say the city is 'New York':
+
+SELECT customer_name, email_address 
+FROM customers 
+WHERE city = 'New York';
+
+This modified query selects only the 'customer_name' and 'email_address' columns from the 'customers' table, and it adds a 
+WHERE clause to filter the results based on the city, in this case, 'New York'.

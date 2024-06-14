@@ -1,0 +1,70 @@
+Design a database schema for a library system, including tables, fields, and constraints like NOT NULL, UNIQUE, and CHECK. 
+Include primary and foreign keys to establish relationships between tables.
+
+
+Tables:
+
+Book
+
+Fields:
+BookID (Primary Key)
+Title
+Author
+ISBN (International Standard Book Number, UNIQUE)
+PublishedYear
+Publisher
+Constraints:
+BookID (NOT NULL)
+Title (NOT NULL)
+Author (NOT NULL)
+ISBN (NOT NULL, UNIQUE)
+PublishedYear (CHECK PublishedYear >= 0)
+Publisher (NOT NULL)
+Member
+
+Fields:
+MemberID (Primary Key)
+Name
+Email (UNIQUE)
+Address
+Phone
+Constraints:
+MemberID (NOT NULL)
+Name (NOT NULL)
+Email (NOT NULL, UNIQUE)
+Address (NOT NULL)
+Phone (NOT NULL)
+Loan
+
+Fields:
+LoanID (Primary Key)
+BookID (Foreign Key referencing Book(BookID))
+MemberID (Foreign Key referencing Member(MemberID))
+LoanDate
+ReturnDate
+Constraints:
+LoanID (NOT NULL)
+BookID (NOT NULL)
+MemberID (NOT NULL)
+LoanDate (NOT NULL)
+ReturnDate (NULL for ongoing loans, CHECK ReturnDate > LoanDate)
+Explanation:
+
+Book: 
+Stores information about books available in the library. Each book is identified by a unique BookID. 
+ISBN is set as a UNIQUE constraint to ensure each book has a distinct identifier. 
+Other fields include information about the title, author, publication year, and publisher.
+
+Member: 
+Contains details of library members. Each member has a unique MemberID. 
+Email is set as UNIQUE to ensure each member has a distinct email address.
+Other fields include the member's name, address, and phone number.
+
+Loan: 
+Tracks the loans made by members. Each loan is assigned a unique LoanID. 
+BookID and MemberID are foreign keys referencing the Book and Member tables, respectively. 
+LoanDate indicates when the book was borrowed, while ReturnDate specifies when it was returned. 
+ReturnDate allows NULL values for ongoing loans and ensures that the return date is after the loan date.
+
+This schema establishes relationships between the Book, Member, and Loan tables. 
+It ensures data integrity by enforcing constraints such as NOT NULL, UNIQUE, and CHECK.
